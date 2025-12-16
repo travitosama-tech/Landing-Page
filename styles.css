@@ -1,3 +1,44 @@
 body {
-    font-family: 'Roboto' sans-serif;
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;    
+}
+
+.section-1 {
+    background-color: #1F2937;
+    display: flex;
+}
+
+.header {
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+.links,
+.header-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.content-text {
+    color:#f9faf8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.content-1.button {
+    background-color: #3882f6;
+    font-size: 18px;
+}
+
+.Main-image img {
+    display: flex;
+    height: 300px;
+    width: 500px;
+}
+
+img {
+    display: flex;
+    height: 120px;
+    width: 100px;
 }
