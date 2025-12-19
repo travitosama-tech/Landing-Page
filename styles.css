@@ -10,24 +10,34 @@ body {
     background-color: #1F2937;
     display: flex;
     flex-wrap: wrap;
+    width: 1713px;
+    padding: 0 100px;
 }
 
-.header {
+.content-1 {
+    width: 1713px;
+}
+
+.header,
+.footer {
     color: #f9faf8;
     font-size: 24px;
     height: 70px;
-    width: 1300px;
+    width: 1713px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    margin: 0 285px;
 }
 
 .links,
-.header-text,
-.text {
+.header-text {
     font-size: 18px;
     color: #E5E7EB;
+}
+
+.text {
+    font-size: 18px;
 }
 
 
@@ -39,24 +49,36 @@ ul {
     gap: 16px;
 }
 
-.content-1 {
+.content-1,
+.content-2,
+.content-3,
+.content-4 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 400px;
+    max-width: 1713px;
+    gap: 100px;
+    margin: 100px 100px;
 }
+
+.content-1-left {
+    padding: 48px;
+}    
+
 
 .content-text {
     color:#f9faf8;
     font-size: 48px;
     font-weight: 900;
     display: flex;
+    width: 400px;
 }
 
 .content-text-2 {
     color:#f9faf8;
     font-size: 18px;
+    width: 400px;
 }
 
 button {
@@ -65,7 +87,7 @@ button {
     color:#E5E7EB;
     border: none;
     border-radius: 8px;
-    padding: 10px;
+    padding: 10px 40px;
 }
 
 .Main-image img {
@@ -84,10 +106,21 @@ img {
 }
 
 .content-2 {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    gap: 50px;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.header-2-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.Item-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
 
 .header-2 {
@@ -95,6 +128,7 @@ img {
     color: #1F2937;
     font-weight: 900;
     display: flex;
+    
 }
 
 .Item-1,
@@ -102,48 +136,78 @@ img {
 .Item-3,
 .Item-4 {
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-flow: column wrap;
     gap: 16px;
 }
 
 .content-3 {
     background-color: #E5E7EB;
     display: flex;
+    align-items: center;
+    padding: 100px 100px;
+    margin: 0;
+    width: 7;
+}
+
+.quote-container {
+    width: 800px;
 }
 
 .Inspiring-quote {
     font-size: 36px;
     color: #1F2937;
     font-weight: 300;
-    display: flex;
 }
 
 .quote-speaker {
     font-size: 24px;
     color:#1F2937;
     display: flex;
+    justify-content: flex-end;
 }
 
-.content-4 {
+div.content-4 {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .signup-box {
-    color:#3882f6;
+    background-color:#3882f6;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1000px;
+    padding: 64px;
+    border: 4px transparent;
+    border-radius: 12px;
 }
+
+.signup-box button {
+    background-color: #3882f6;
+    font-size: 18px;
+    color:#E5E7EB;
+    border:  2px solid white;
+    border-radius: 8px;
+
+}
+
+.action-left {
+    display: flex;
+    flex-direction: column;
+
+}
+
 
 .action {
     font-size: 24px;
     color: #f9faf8;
-    display: flex;
 }
 
 .signup-text {
     font-size: 18px;
     color:#f9faf8;
-    display: flex;
 }
 
 .footer {
@@ -152,5 +216,6 @@ img {
     font-size: 18px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 0 100px;
+    margin: 0;
 }
